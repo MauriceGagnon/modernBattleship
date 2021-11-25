@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import logo from "./images/LogoModernBattleship.png";
+import pinWhite from "./images/pinWhite.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "./app.css";
 
@@ -34,7 +35,7 @@ function Game() {
             <img className="logo" src={logo} alt="Logo Modern Battleship"></img>
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-2 special-card" style={{ marginTop: 100 }}>
+                    <div className="col-sm-3 special-card" style={{ marginTop: 100 }}>
                         <div class="card h-75">
                             <div class="card-body">
                                 <h5 class="card-title">Welcome Maurice</h5>
@@ -49,6 +50,23 @@ function Game() {
                         <p className="boardTitle" style={{ marginTop: 150 }}>
                             OPPENENT'S FLEET
                         </p>
+                        <ul>
+                            <li>
+                                <img className="pin" src={pinWhite} alt="Pin white"></img>
+                            </li>
+                            <li>
+                                <img className="pin" src={pinWhite} alt="Pin white"></img>
+                            </li>
+                            <li>
+                                <img className="pin" src={pinWhite} alt="Pin white"></img>
+                            </li>
+                            <li>
+                                <img className="pin" src={pinWhite} alt="Pin white"></img>
+                            </li>
+                            <li>
+                                <img className="pin" src={pinWhite} alt="Pin white"></img>
+                            </li>
+                        </ul>
                         <div className="game">
                             <div className="game-board">
                                 <div className="board-row">
@@ -174,7 +192,7 @@ function Game() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-5" style={{ marginTop: -50 }}>
+                    <div className="col-sm-4" style={{ marginTop: -50 }}>
                         <p className="boardTitle">YOUR FLEET</p>
                         <div className="game2">
                             <div className="game-board">
