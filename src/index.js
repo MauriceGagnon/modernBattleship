@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import logo from "./images/LogoModernBattleship.png";
 import "bootstrap/dist/css/bootstrap.css";
+import "./app.css";
 
 function Square({ value, click }) {
     return (
@@ -31,16 +32,23 @@ function Game() {
     return (
         <div className="container">
             <img className="logo" src={logo} alt="Logo Modern Battleship"></img>
-            <div className="row">
-                <div className="col-sm-3, mt-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title">Welcome Maurice</h4>
-                            <p class="card-text">Your scrore : 10 vs 15</p>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-2 special-card" style={{ marginTop: 100 }}>
+                        <div class="card h-75">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcome Maurice</h5>
+                                <p class="card-text" style={{ marginTop: 30 }}>
+                                    Your scrore : 10 vs 15
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div className="col-sm-5">
-                        <p className="boardTitle">OPPENENT'S FLEET</p>
+                        <p className="boardTitle" style={{ marginTop: 150 }}>
+                            OPPENENT'S FLEET
+                        </p>
                         <div className="game">
                             <div className="game-board">
                                 <div className="board-row">
@@ -165,130 +173,130 @@ function Game() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-6">
-                            <p className="boardTitle">YOUR FLEET</p>
-                            <div className="game2">
-                                <div className="game-board">
-                                    <div className="board-row">
-                                        {fabriqueSquare(10)}
-                                        {fabriqueSquare(11)}
-                                        {fabriqueSquare(12)}
-                                        {fabriqueSquare(13)}
-                                        {fabriqueSquare(14)}
-                                        {fabriqueSquare(15)}
-                                        {fabriqueSquare(16)}
-                                        {fabriqueSquare(17)}
-                                        {fabriqueSquare(18)}
-                                        {fabriqueSquare(19)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(110)}
-                                        {fabriqueSquare(111)}
-                                        {fabriqueSquare(112)}
-                                        {fabriqueSquare(113)}
-                                        {fabriqueSquare(114)}
-                                        {fabriqueSquare(115)}
-                                        {fabriqueSquare(116)}
-                                        {fabriqueSquare(117)}
-                                        {fabriqueSquare(118)}
-                                        {fabriqueSquare(119)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(120)}
-                                        {fabriqueSquare(121)}
-                                        {fabriqueSquare(122)}
-                                        {fabriqueSquare(123)}
-                                        {fabriqueSquare(124)}
-                                        {fabriqueSquare(125)}
-                                        {fabriqueSquare(126)}
-                                        {fabriqueSquare(127)}
-                                        {fabriqueSquare(128)}
-                                        {fabriqueSquare(129)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(130)}
-                                        {fabriqueSquare(131)}
-                                        {fabriqueSquare(132)}
-                                        {fabriqueSquare(133)}
-                                        {fabriqueSquare(134)}
-                                        {fabriqueSquare(135)}
-                                        {fabriqueSquare(136)}
-                                        {fabriqueSquare(137)}
-                                        {fabriqueSquare(138)}
-                                        {fabriqueSquare(139)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(140)}
-                                        {fabriqueSquare(141)}
-                                        {fabriqueSquare(142)}
-                                        {fabriqueSquare(143)}
-                                        {fabriqueSquare(144)}
-                                        {fabriqueSquare(145)}
-                                        {fabriqueSquare(146)}
-                                        {fabriqueSquare(147)}
-                                        {fabriqueSquare(148)}
-                                        {fabriqueSquare(149)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(150)}
-                                        {fabriqueSquare(151)}
-                                        {fabriqueSquare(152)}
-                                        {fabriqueSquare(153)}
-                                        {fabriqueSquare(154)}
-                                        {fabriqueSquare(155)}
-                                        {fabriqueSquare(156)}
-                                        {fabriqueSquare(157)}
-                                        {fabriqueSquare(158)}
-                                        {fabriqueSquare(159)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(160)}
-                                        {fabriqueSquare(161)}
-                                        {fabriqueSquare(162)}
-                                        {fabriqueSquare(163)}
-                                        {fabriqueSquare(164)}
-                                        {fabriqueSquare(165)}
-                                        {fabriqueSquare(166)}
-                                        {fabriqueSquare(167)}
-                                        {fabriqueSquare(168)}
-                                        {fabriqueSquare(169)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(170)}
-                                        {fabriqueSquare(171)}
-                                        {fabriqueSquare(172)}
-                                        {fabriqueSquare(173)}
-                                        {fabriqueSquare(174)}
-                                        {fabriqueSquare(175)}
-                                        {fabriqueSquare(176)}
-                                        {fabriqueSquare(177)}
-                                        {fabriqueSquare(178)}
-                                        {fabriqueSquare(179)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(180)}
-                                        {fabriqueSquare(181)}
-                                        {fabriqueSquare(182)}
-                                        {fabriqueSquare(183)}
-                                        {fabriqueSquare(184)}
-                                        {fabriqueSquare(185)}
-                                        {fabriqueSquare(186)}
-                                        {fabriqueSquare(187)}
-                                        {fabriqueSquare(188)}
-                                        {fabriqueSquare(189)}
-                                    </div>
-                                    <div className="board-row">
-                                        {fabriqueSquare(190)}
-                                        {fabriqueSquare(191)}
-                                        {fabriqueSquare(192)}
-                                        {fabriqueSquare(193)}
-                                        {fabriqueSquare(194)}
-                                        {fabriqueSquare(195)}
-                                        {fabriqueSquare(196)}
-                                        {fabriqueSquare(197)}
-                                        {fabriqueSquare(198)}
-                                        {fabriqueSquare(199)}
-                                    </div>
+                    </div>
+                    <div className="col-sm-5" style={{ marginTop: -50 }}>
+                        <p className="boardTitle">YOUR FLEET</p>
+                        <div className="game2">
+                            <div className="game-board">
+                                <div className="board-row">
+                                    {fabriqueSquare(10)}
+                                    {fabriqueSquare(11)}
+                                    {fabriqueSquare(12)}
+                                    {fabriqueSquare(13)}
+                                    {fabriqueSquare(14)}
+                                    {fabriqueSquare(15)}
+                                    {fabriqueSquare(16)}
+                                    {fabriqueSquare(17)}
+                                    {fabriqueSquare(18)}
+                                    {fabriqueSquare(19)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(110)}
+                                    {fabriqueSquare(111)}
+                                    {fabriqueSquare(112)}
+                                    {fabriqueSquare(113)}
+                                    {fabriqueSquare(114)}
+                                    {fabriqueSquare(115)}
+                                    {fabriqueSquare(116)}
+                                    {fabriqueSquare(117)}
+                                    {fabriqueSquare(118)}
+                                    {fabriqueSquare(119)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(120)}
+                                    {fabriqueSquare(121)}
+                                    {fabriqueSquare(122)}
+                                    {fabriqueSquare(123)}
+                                    {fabriqueSquare(124)}
+                                    {fabriqueSquare(125)}
+                                    {fabriqueSquare(126)}
+                                    {fabriqueSquare(127)}
+                                    {fabriqueSquare(128)}
+                                    {fabriqueSquare(129)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(130)}
+                                    {fabriqueSquare(131)}
+                                    {fabriqueSquare(132)}
+                                    {fabriqueSquare(133)}
+                                    {fabriqueSquare(134)}
+                                    {fabriqueSquare(135)}
+                                    {fabriqueSquare(136)}
+                                    {fabriqueSquare(137)}
+                                    {fabriqueSquare(138)}
+                                    {fabriqueSquare(139)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(140)}
+                                    {fabriqueSquare(141)}
+                                    {fabriqueSquare(142)}
+                                    {fabriqueSquare(143)}
+                                    {fabriqueSquare(144)}
+                                    {fabriqueSquare(145)}
+                                    {fabriqueSquare(146)}
+                                    {fabriqueSquare(147)}
+                                    {fabriqueSquare(148)}
+                                    {fabriqueSquare(149)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(150)}
+                                    {fabriqueSquare(151)}
+                                    {fabriqueSquare(152)}
+                                    {fabriqueSquare(153)}
+                                    {fabriqueSquare(154)}
+                                    {fabriqueSquare(155)}
+                                    {fabriqueSquare(156)}
+                                    {fabriqueSquare(157)}
+                                    {fabriqueSquare(158)}
+                                    {fabriqueSquare(159)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(160)}
+                                    {fabriqueSquare(161)}
+                                    {fabriqueSquare(162)}
+                                    {fabriqueSquare(163)}
+                                    {fabriqueSquare(164)}
+                                    {fabriqueSquare(165)}
+                                    {fabriqueSquare(166)}
+                                    {fabriqueSquare(167)}
+                                    {fabriqueSquare(168)}
+                                    {fabriqueSquare(169)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(170)}
+                                    {fabriqueSquare(171)}
+                                    {fabriqueSquare(172)}
+                                    {fabriqueSquare(173)}
+                                    {fabriqueSquare(174)}
+                                    {fabriqueSquare(175)}
+                                    {fabriqueSquare(176)}
+                                    {fabriqueSquare(177)}
+                                    {fabriqueSquare(178)}
+                                    {fabriqueSquare(179)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(180)}
+                                    {fabriqueSquare(181)}
+                                    {fabriqueSquare(182)}
+                                    {fabriqueSquare(183)}
+                                    {fabriqueSquare(184)}
+                                    {fabriqueSquare(185)}
+                                    {fabriqueSquare(186)}
+                                    {fabriqueSquare(187)}
+                                    {fabriqueSquare(188)}
+                                    {fabriqueSquare(189)}
+                                </div>
+                                <div className="board-row">
+                                    {fabriqueSquare(190)}
+                                    {fabriqueSquare(191)}
+                                    {fabriqueSquare(192)}
+                                    {fabriqueSquare(193)}
+                                    {fabriqueSquare(194)}
+                                    {fabriqueSquare(195)}
+                                    {fabriqueSquare(196)}
+                                    {fabriqueSquare(197)}
+                                    {fabriqueSquare(198)}
+                                    {fabriqueSquare(199)}
                                 </div>
                             </div>
                         </div>
