@@ -7,6 +7,23 @@ body {
     background-size: 87%;
     background-repeat: no-repeat;
     background-position-x: center;
+    background-image: url(images/mainBackground.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.containerHome {
+    /* height: 920px;
+    width: 1920px;
+    position: absolute;
+    text-align: center; */
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(images/mainBackground.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
 code {
