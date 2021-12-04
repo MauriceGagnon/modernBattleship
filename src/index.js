@@ -9,7 +9,7 @@ import Board from "./pages/Board";
 export default function App() {
     return (
         <Router>
-            {/* <containerMenu>
+            <containerMenu>
                 <div>
                     <Link to="/" className="menuHome">
                         Home
@@ -20,7 +20,7 @@ export default function App() {
                         Board
                     </Link>
                 </div>
-            </containerMenu> */}
+            </containerMenu>
 
             <hr />
 

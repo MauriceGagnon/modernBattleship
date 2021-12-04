@@ -1,13 +1,13 @@
 body {
     background-color: rgb(0, 48, 66);
 }
-.containerMenu {
+/* .containerMenu {
     position: absolute;
     text-align: center;
-}
+} */
 .menuHome {
     position: absolute;
-    top: 50px;
+    top: 2px;
     left: 16px;
 }
 .menuBoard {
