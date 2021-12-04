@@ -91,9 +91,14 @@ code {
 .special-card {
     opacity: 0.7;
 }
-.pin {
-    display: inline-block;
+ul#pin li {
+    display: inline;
+    padding-right: 20px;
 }
+ul#pin {
+    margin-left: 260px;
+}
+
 .login {
     margin: 100px 0 0 800px;
     display: flex;

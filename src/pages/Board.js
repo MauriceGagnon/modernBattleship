@@ -52,7 +52,7 @@ function Board() {
                             <p className="boardTitle" style={{ marginTop: 150 }}>
                                 OPPENENT'S FLEET
                             </p>
-                            <ul>
+                            <ul id="pin">
                                 <li>
                                     <img className="pin" src={pinWhite} alt="Pin white"></img>
                                 </li>
