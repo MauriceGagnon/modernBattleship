@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../index.scss";
 import logo from "../images/LogoModernBattleship.png";
 import pinWhite from "../images/pinWhite.png";
+import pinRed from "../images/pinRed.png";
 import blueprint from "../images/blueprint.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "../app.css";
@@ -16,9 +17,11 @@ function Square({ value, click }) {
 }
 
 function Board() {
+    const whitePin = <img className="pin" src={pinWhite} alt="Pin white"></img>;
+    const RedPin = <img className="pin" src={pinRed} alt="Pin red"></img>;
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [isXNext, setIsXNext] = useState(true);
-    const nextSymbole = isXNext ? "X" : "O";
+    const nextSymbole = isXNext ? whitePin : RedPin;
 
     function onClickSquare(position) {
         let maCopie = squares.slice();
@@ -49,12 +52,12 @@ function Board() {
                         </div>
 
                         <div className="col-sm-5">
-                            <p className="boardTitle" style={{ marginTop: 150 }}>
+                            <p className="boardTitle" style={{ marginTop: 100 }}>
                                 OPPENENT'S FLEET
                             </p>
                             <ul id="pin">
                                 <li>
-                                    <img className="pin" src={pinWhite} alt="Pin white"></img>
+                                    <img className="pin" src={pinRed} alt="Pin Red"></img>
                                 </li>
                                 <li>
                                     <img className="pin" src={pinWhite} alt="Pin white"></img>
@@ -196,19 +199,36 @@ function Board() {
                         </div>
                         <div className="col-sm-4" style={{ marginTop: -50 }}>
                             <p className="boardTitle">YOUR FLEET</p>
+                            <ul id="pin2">
+                                <li>
+                                    <img className="pin2" src={pinRed} alt="Pin Red"></img>
+                                </li>
+                                <li>
+                                    <img className="pin2" src={pinRed} alt="Pin Red"></img>
+                                </li>
+                                <li>
+                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
+                                </li>
+                                <li>
+                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
+                                </li>
+                                <li>
+                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
+                                </li>
+                            </ul>
                             <div className="game2">
                                 <div className="game-board">
                                     <div className="board-row">
-                                        {fabriqueSquare(10)}
-                                        {fabriqueSquare(11)}
-                                        {fabriqueSquare(12)}
-                                        {fabriqueSquare(13)}
-                                        {fabriqueSquare(14)}
-                                        {fabriqueSquare(15)}
-                                        {fabriqueSquare(16)}
-                                        {fabriqueSquare(17)}
-                                        {fabriqueSquare(18)}
-                                        {fabriqueSquare(19)}
+                                        {fabriqueSquare(100)}
+                                        {fabriqueSquare(101)}
+                                        {fabriqueSquare(102)}
+                                        {fabriqueSquare(103)}
+                                        {fabriqueSquare(104)}
+                                        {fabriqueSquare(105)}
+                                        {fabriqueSquare(106)}
+                                        {fabriqueSquare(107)}
+                                        {fabriqueSquare(108)}
+                                        {fabriqueSquare(109)}
                                     </div>
                                     <div className="board-row">
                                         {fabriqueSquare(110)}

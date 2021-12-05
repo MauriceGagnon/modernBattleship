@@ -27,18 +27,26 @@ code {
     width: 325px;
     height: 50%;
     margin-top: 65px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 .logoHome {
     width: 550px;
     margin: 65px 0 0 200px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 .moeGame {
     width: 75px;
     margin: 350px 0 0 0px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 .logoReact {
     width: 75px;
     margin: 350px 0 0 50px;
+    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
 }
 
 .boardTitle {
@@ -98,13 +106,51 @@ ul#pin li {
 ul#pin {
     margin-left: 260px;
 }
+ul#pin2 li {
+    display: inline;
+    padding-right: 10px;
+}
+ul#pin2 {
+    margin-left: 230px;
+}
+.pin2 {
+    width: 12%;
+    height: auto;
+    opacity: 1 !important;
+}
 
 .login {
     margin: 100px 0 0 800px;
     display: flex;
 }
-.btnLogin {
-    margin-left: 5px;
+.loginTitle {
     color: white;
-    background-color: #00a6f7;
+    font-size: 20px;
+    text-shadow: 2px 2px #001118;
+}
+.input {
+    size: 500;
+}
+
+.btnLogin {
+    box-shadow: inset 0px -3px 7px 0px #29bbff;
+    background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+    background-color: #2dabf9;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    padding: 3px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #263666;
+    margin-left: 15px;
+}
+.btnLogin:hover {
+    background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+    background-color: #0688fa;
+}
+.btnLogin:active {
+    position: relative;
+    top: 1px;
 }

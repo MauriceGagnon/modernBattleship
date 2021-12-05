@@ -22,12 +22,12 @@ function Home() {
         return (
             <form>
                 <label>
-                    Enter your warrior name : <input type="text" value={surname} onChange={(e) => setsurName(e.target.value)} />
+                    <p className="loginTitle">Enter your warrior name</p>
+                    <input className="input" size="35" type="text" value={surname} onChange={(e) => setsurName(e.target.value)} />
                 </label>
                 <button type="submit" className="btnLogin" onClick={routeChange}>
                     Login
                 </button>
-                {/* <input className="btnLogin" type="submit" /> */}
             </form>
         );
     }
