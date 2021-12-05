@@ -52,20 +52,27 @@ code {
 .boardTitle {
     font-size: 16px;
     color: white;
-    margin-top: 50px;
+    position: absolute;
+}
+.boardTitle2 {
+    font-size: 16px;
+    color: white;
+    position: absolute;
 }
 
 .game {
     .game-board {
+        position: absolute;
+        margin-top: -400px;
         .board-row {
             display: flex;
 
             .board-square {
-                border: 1px solid rgba(255, 255, 255, 0.842);
+                border: 1px solid rgba(255, 255, 255, 0.45);
                 height: 50px;
                 width: 50px;
-                background-color: rgb(0, 35, 48);
-                opacity: 0.5;
+                // background-color: rgb(0, 35, 48);
+                // opacity: 0.1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -78,15 +85,17 @@ code {
 
 .game2 {
     .game-board {
+        position: absolute;
+        margin-top: 10px;
         .board-row {
             display: flex;
 
             .board-square {
-                border: 1px solid rgba(255, 255, 255, 0.842);
+                border: 1px solid rgba(255, 255, 255, 0.45);
                 height: 40px;
                 width: 40px;
-                background-color: rgb(0, 35, 48);
-                opacity: 0.5;
+                // background-color: rgb(0, 35, 48);
+                // opacity: 0.5;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -104,7 +113,9 @@ ul#pin li {
     padding-right: 20px;
 }
 ul#pin {
+    position: absolute;
     margin-left: 260px;
+    margin-top: -450px;
 }
 ul#pin2 li {
     display: inline;
@@ -112,6 +123,7 @@ ul#pin2 li {
 }
 ul#pin2 {
     margin-left: 230px;
+    margin-top: -400px;
 }
 .pin2 {
     width: 12%;
@@ -153,4 +165,22 @@ ul#pin2 {
 .btnLogin:active {
     position: relative;
     top: 1px;
+}
+#gridBG {
+    background-color: rgb(1, 26, 36);
+    opacity: 0.5;
+    position: relative;
+    top: 100px;
+    left: 0px;
+    width: 500px;
+    height: 500px;
+}
+#gridBG2 {
+    background-color: rgb(1, 26, 36);
+    opacity: 0.5;
+    position: relative;
+    top: 50px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
 }

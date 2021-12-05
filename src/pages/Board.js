@@ -52,7 +52,8 @@ function Board() {
                         </div>
 
                         <div className="col-sm-5">
-                            <p className="boardTitle" style={{ marginTop: 100 }}>
+                            <div id="gridBG"></div>
+                            <p className="boardTitle" style={{ marginTop: -450 }}>
                                 OPPENENT'S FLEET
                             </p>
                             <ul id="pin">
@@ -198,7 +199,8 @@ function Board() {
                             </div>
                         </div>
                         <div className="col-sm-4" style={{ marginTop: -50 }}>
-                            <p className="boardTitle">YOUR FLEET</p>
+                            <p className="boardTitle2">YOUR FLEET</p>
+                            <div id="gridBG2"></div>
                             <ul id="pin2">
                                 <li>
                                     <img className="pin2" src={pinRed} alt="Pin Red"></img>
