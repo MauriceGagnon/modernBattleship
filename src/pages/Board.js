@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 import "../index.scss";
 import logo from "../images/LogoModernBattleship.png";
 import pinWhite from "../images/pinWhite.png";
@@ -41,12 +41,24 @@ function Board() {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-3 special-card" style={{ marginTop: 100 }}>
-                            <div class="card h-75">
+                            <div className="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">Welcome Maurice</h5>
-                                    <p class="card-text" style={{ marginTop: 30 }}>
+                                    <h5 className="card-title">Welcome Maurice</h5>
+                                    <p className="card-text" style={{ marginTop: 30 }}>
                                         Your scrore : 10 vs 15
                                     </p>
+                                    <p className="card-text" style={{ marginTop: 30 }}>
+                                        Round : 15
+                                    </p>
+                                    <div className="card-footer">
+                                        {/* <button type="submit" className="btnLogin" onClick={routeChange}> */}
+                                        <button type="submit" className="btnLogin">
+                                            Quit
+                                        </button>
+                                        <button type="submit" className="btnLogin">
+                                            Start
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
