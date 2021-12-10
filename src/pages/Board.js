@@ -7,6 +7,9 @@ import pinRed from "../images/pinRed.png";
 import blueprint from "../images/blueprint.png";
 import "bootstrap/dist/css/bootstrap.css";
 import "../app.css";
+import { useDrag, useDrop } from "react-dnd";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 function Square({ value, click }) {
     return (
@@ -16,12 +19,46 @@ function Square({ value, click }) {
     );
 }
 
+function PinWhite() {
+    return (
+        <li className="pin">
+            <img className="pin" src={pinWhite} alt="Pin white"></img>
+        </li>
+    );
+}
+
+function PinRed() {
+    return (
+        <li className="pin">
+            <img className="pin" src={pinRed} alt="Pin Red"></img>
+        </li>
+    );
+}
+
+function Card({ isDragging, color, stateClassName }) {
+    const [{ opacity }, dragRef] = useDrag(
+        () => ({
+            type: "CARD",
+            item: { color },
+            collect: (monitor) => ({
+                opacity: monitor.isDragging() ? 0.5 : 1,
+            }),
+        }),
+        []
+    );
+    return (
+        <div ref={dragRef} style={{ opacity, backgroundColor: color }} className={"Card " + stateClassName}>
+            {color}
+        </div>
+    );
+}
+
 function Board() {
     const whitePin = <img className="pin" src={pinWhite} alt="Pin white"></img>;
     const RedPin = <img className="pin" src={pinRed} alt="Pin red"></img>;
     const [squares, setSquares] = useState(Array(9).fill(null));
     const [isXNext, setIsXNext] = useState(true);
-    const nextSymbole = isXNext ? whitePin : RedPin;
+    const nextSymbole = isXNext ? <PinWhite /> : <PinRed />;
 
     function onClickSquare(position) {
         let maCopie = squares.slice();
@@ -68,22 +105,13 @@ function Board() {
                             <p className="boardTitle" style={{ marginTop: -450 }}>
                                 OPPENENT'S FLEET
                             </p>
+                            {/* <ul className="UlBullet"> */}
                             <ul id="pin">
-                                <li>
-                                    <img className="pin" src={pinRed} alt="Pin Red"></img>
-                                </li>
-                                <li>
-                                    <img className="pin" src={pinWhite} alt="Pin white"></img>
-                                </li>
-                                <li>
-                                    <img className="pin" src={pinWhite} alt="Pin white"></img>
-                                </li>
-                                <li>
-                                    <img className="pin" src={pinWhite} alt="Pin white"></img>
-                                </li>
-                                <li>
-                                    <img className="pin" src={pinWhite} alt="Pin white"></img>
-                                </li>
+                                <PinRed />
+                                <PinRed />
+                                <PinWhite />
+                                <PinWhite />
+                                <PinWhite />
                             </ul>
                             <div className="game">
                                 <div className="game-board">
@@ -214,21 +242,11 @@ function Board() {
                             <p className="boardTitle2">YOUR FLEET</p>
                             <div id="gridBG2"></div>
                             <ul id="pin2">
-                                <li>
-                                    <img className="pin2" src={pinRed} alt="Pin Red"></img>
-                                </li>
-                                <li>
-                                    <img className="pin2" src={pinRed} alt="Pin Red"></img>
-                                </li>
-                                <li>
-                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
-                                </li>
-                                <li>
-                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
-                                </li>
-                                <li>
-                                    <img className="pin2" src={pinWhite} alt="Pin white"></img>
-                                </li>
+                                <PinRed></PinRed>
+                                <PinRed></PinRed>
+                                <PinWhite></PinWhite>
+                                <PinWhite></PinWhite>
+                                <PinWhite></PinWhite>
                             </ul>
                             <div className="game2">
                                 <div className="game-board">
