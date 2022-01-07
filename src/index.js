@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Rules from "./pages/Rules";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as ReactBootstrap from "react-bootstrap";
+import { FaUserCircle } from "react-icons/fa";
 
 export default function App() {
     return (
@@ -28,7 +29,7 @@ export default function App() {
                                 <ReactBootstrap.Nav>
                                     <ReactBootstrap.Nav.Link href="#deets"></ReactBootstrap.Nav.Link>
                                     <ReactBootstrap.Nav.Link eventKey={2} href="#Log">
-                                        <i class="fas fa-user-circle"></i> Logout
+                                        <FaUserCircle size="1.4em" title="Profil" /> Profil
                                     </ReactBootstrap.Nav.Link>
                                 </ReactBootstrap.Nav>
                             </ReactBootstrap.Navbar.Collapse>
