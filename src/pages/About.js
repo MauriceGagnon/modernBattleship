@@ -22,7 +22,7 @@ function Home() {
         return (
             <form>
                 <label>
-                    <p className="loginTitle">Enter your warrior name</p>
+                    <p className="loginTitle">About</p>
                     <input className="input" size="35" type="text" value={surname} onChange={(e) => setsurName(e.target.value)} />
                 </label>
                 <button type="submit" className="btnLogin" onClick={routeChange}>
