@@ -1,12 +1,13 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./index.scss";
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
 import "./app.css";
 import Home from "./pages/Home";
 import Board from "./pages/Board";
 import About from "./pages/About";
 import Rules from "./pages/Rules";
+import Login from "./pages/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as ReactBootstrap from "react-bootstrap";
 import { FaUserCircle } from "react-icons/fa";
@@ -25,6 +26,7 @@ export default function App() {
                                     <ReactBootstrap.Nav.Link href="/Board">Board</ReactBootstrap.Nav.Link>
                                     <ReactBootstrap.Nav.Link href="/About">About</ReactBootstrap.Nav.Link>
                                     <ReactBootstrap.Nav.Link href="/Rules">Rules</ReactBootstrap.Nav.Link>
+                                    <ReactBootstrap.Nav.Link href="/Login">Login</ReactBootstrap.Nav.Link>
                                 </ReactBootstrap.Nav>
                                 <ReactBootstrap.Nav>
                                     <ReactBootstrap.Nav.Link href="#deets"></ReactBootstrap.Nav.Link>
@@ -67,6 +69,9 @@ export default function App() {
                 </Route>
                 <Route path="/Rules">
                     <Rules />
+                </Route>
+                <Route path="/Login">
+                    <Login />
                 </Route>
             </Switch>
         </Router>
