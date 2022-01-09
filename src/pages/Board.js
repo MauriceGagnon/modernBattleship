@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import "../index.scss";
+import "../style.scss";
 import logo from "../images/LogoModernBattleship.png";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";

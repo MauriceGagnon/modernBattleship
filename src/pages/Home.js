@@ -5,7 +5,7 @@ import logoReact from "../images/reactLogoBlanc.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "../index.scss";
+import "../style.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "../app.css";
 

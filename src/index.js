@@ -1,8 +1,7 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./index.scss";
-// import "bootstrap/dist/css/bootstrap.css";
-import "./app.css";
+import "./style.scss";
+import "bootstrap/dist/css/bootstrap.css";
 import Home from "./pages/Home";
 import Board from "./pages/Board";
 import About from "./pages/About";
@@ -15,7 +14,7 @@ import { FaUserCircle } from "react-icons/fa";
 export default function App() {
     return (
         <Router>
-            <div>
+            <div className="Navigation">
                 <ReactBootstrap.Navbar>
                     <ReactBootstrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                         <ReactBootstrap.Container>
@@ -39,23 +38,6 @@ export default function App() {
                     </ReactBootstrap.Navbar>
                 </ReactBootstrap.Navbar>
             </div>
-            {/* <containerMenu>
-                <div>
-                    <Link to="/" className="menuHome">
-                        Home
-                    </Link>
-                </div>
-                <div>
-                    <Link to="/Board" className="menuBoard">
-                        Board
-                    </Link>
-                </div>
-                <div>
-                    <Link to="/About" className="menuAbout">
-                        About
-                    </Link>
-                </div>
-            </containerMenu> */}
 
             <Switch>
                 <Route exact path="/">
