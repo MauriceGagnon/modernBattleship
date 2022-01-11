@@ -5,8 +5,6 @@ import logoReact from "../images/reactLogoBlanc.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../app.css";
-import "../style.scss";
 
 function Rules() {
     return (

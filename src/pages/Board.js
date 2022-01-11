@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import "../style.scss";
 import logo from "../images/LogoModernBattleship.png";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";
 import blueprint from "../images/blueprint.png";
 import "bootstrap/dist/css/bootstrap.css";
-import "../app.css";
 import { useDrag, useDrop } from "react-dnd";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";

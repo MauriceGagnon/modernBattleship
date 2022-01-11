@@ -5,43 +5,43 @@ import logoReact from "../images/reactLogoBlanc.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "../style.scss";
 import "bootstrap/dist/css/bootstrap.css";
-import "../app.css";
+import BateauA1 from "../images/pieces/a1.png";
+import BateauA2 from "../images/pieces/a2.png";
+import BateauA3 from "../images/pieces/a3.png";
+import BateauA4 from "../images/pieces/a4.png";
+import BateauA5 from "../images/pieces/a5.png";
+import pinWhite from "../images/pinWhite.png";
+import pinRed from "../images/pinRed.png";
 
 // const Home = () => {
 function Home() {
-    function Login() {
-        const history = useHistory();
-
-        const routeChange = () => {
-            let path = "/Board";
-            history.push(path);
-        };
-        const [surname, setsurName] = useState("");
-        return (
-            <form>
-                <label>
-                    <p className="loginTitle">About</p>
-                    <input className="input" size="35" type="text" value={surname} onChange={(e) => setsurName(e.target.value)} />
-                </label>
-                <button type="submit" className="btnLogin" onClick={routeChange}>
-                    Login
-                </button>
-            </form>
-        );
-    }
-
     return (
-        <div className="backgroundImageHome" style={{ backgroundImage: `url(${backgroung})` }}>
-            <div className="container">
-                <img className="logoHome" src={logo} alt="Logo Modern Battleship"></img>
-                <div className="login">
-                    <div>{Login()}</div>
-                </div>
-                <div>
-                    <img className="moeGame" src={logoMoe} alt="Logo Moe Game"></img>
-                    <img className="logoReact" src={logoReact} alt="Logo React"></img>
+        <div className="container">
+            <div className="bateaux">
+                <div className="row">
+                    <div className="col-4">
+                        <p id="test">Allo</p>
+                        <div id="bateauA">
+                            <ul>
+                                <li>
+                                    <img src={BateauA1} alt="Logo Modern Battleship"></img>
+                                </li>
+                                <li>
+                                    <img src={BateauA2} alt="Logo Modern Battleship"></img>
+                                </li>
+                                <li>
+                                    <img src={BateauA3} alt="Logo Modern Battleship"></img>
+                                </li>
+                                <li>
+                                    <img src={BateauA4} alt="Logo Modern Battleship"></img>
+                                </li>
+                                <li>
+                                    <img src={BateauA5} alt="Logo Modern Battleship"></img>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
