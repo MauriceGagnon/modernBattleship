@@ -6,11 +6,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import BateauA1 from "../images/pieces/a1.png";
-import BateauA2 from "../images/pieces/a2.png";
-import BateauA3 from "../images/pieces/a3.png";
-import BateauA4 from "../images/pieces/a4.png";
-import BateauA5 from "../images/pieces/a5.png";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";
 
@@ -24,7 +19,7 @@ function Home() {
                         <p id="test">Allo</p>
                         <div id="bateauA">
                             <ul>
-                                <li>
+                                {/* <li>
                                     <img src={BateauA1} alt="Logo Modern Battleship"></img>
                                 </li>
                                 <li>
@@ -38,7 +33,7 @@ function Home() {
                                 </li>
                                 <li>
                                     <img src={BateauA5} alt="Logo Modern Battleship"></img>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>

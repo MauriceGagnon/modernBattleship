@@ -10,11 +10,20 @@ import Login from "./pages/Login";
 import "bootstrap/dist/css/bootstrap.min.css";
 import * as ReactBootstrap from "react-bootstrap";
 import { FaUserCircle } from "react-icons/fa";
+import { AuthContext } from "./AuthContext.js";
+import Auth from "./Auth";
+import { useState, useMemo } from "react";
 
 export default function App() {
+    const [auth, setAuth] = useState({ isAuth: false, token: null });
     return (
         <Router>
-            {/* <div className="Navigation"> */}
+            <AuthContext.Provider value={[auth, setAuth]}>
+                <div className="App">
+                    <Auth />
+                </div>
+            </AuthContext.Provider>
+
             <ReactBootstrap.Navbar>
                 <ReactBootstrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <ReactBootstrap.Container>
@@ -37,8 +46,6 @@ export default function App() {
                     </ReactBootstrap.Container>
                 </ReactBootstrap.Navbar>
             </ReactBootstrap.Navbar>
-            {/* </div> */}
-
             <Switch>
                 <Route exact path="/">
                     <Home />

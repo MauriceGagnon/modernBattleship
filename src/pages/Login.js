@@ -1,34 +1,39 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import backgroung from "../images/mainBackground.jpg";
+import logo from "../images/LogoModernBattleship.png";
+import logoMoe from "../images/moeGameBlanc.png";
+import logoReact from "../images/reactLogoBlanc.png";
 
-import Login from "../components/login.component";
-import SignUp from "../components/signup.component";
+import Login from "./components/login.component.js";
+import SignUp from "./components/signup.component.js";
 
-function App() {
+function Log() {
     return (
-        <div>
-            <h1>Allo world</h1>
-            <Link className="nav-link" to={"/sign-in"}>
-                Login
-            </Link>
-        </div>
-
-        // <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-        //     <ul className="navbar-nav ml-auto">
-        //         <li className="nav-item">
-        //             <Link className="nav-link" to={"/sign-in"}>
-        //                 Login
-        //             </Link>
-        //         </li>
-        //         <li className="nav-item">
-        //             <Link className="nav-link" to={"/sign-up"}>
-        //                 Sign up
-        //             </Link>
-        //         </li>
-        //     </ul>
-        // </div>
+        <Router>
+            <div className="backgroundImageHome" style={{ backgroundImage: `url(${backgroung})` }}>
+                <div className="container">
+                    <img className="logoHome" src={logo} alt="Logo Modern Battleship"></img>
+                    <div>
+                        <div className="log">
+                            <div className="outer">
+                                <div className="inner">
+                                    <Switch>
+                                        <Route exact path="/Login" component={Login} />
+                                        <Route path="/sign-in" component={Login} />
+                                        <Route path="/sign-up" component={SignUp} />
+                                    </Switch>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <img className="moeGame" src={logoMoe} alt="Logo Moe Game"></img>
+                        <img className="logoReact" src={logoReact} alt="Logo React"></img> */}
+                    </div>
+                </div>
+            </div>
+        </Router>
     );
 }
 
-export default App;
+export default Log;

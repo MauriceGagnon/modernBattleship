@@ -12,18 +12,19 @@ function Home() {
         const history = useHistory();
 
         const routeChange = () => {
-            let path = "/Board";
+            let path = "/Login";
             history.push(path);
         };
         const [surname, setsurName] = useState("");
         return (
             <form>
-                <label>
+                <p className="advertise">Go back to childhood and enter the world of naval battles like you've never seen before. Face your opponents in a modern online BATTLESHIP games.</p>
+                {/* <label>
                     <p className="loginTitle">Enter your warrior name</p>
                     <input className="input" size="35" type="text" value={surname} onChange={(e) => setsurName(e.target.value)} />
-                </label>
+                </label> */}
                 <button type="submit" className="btnLogin" onClick={routeChange}>
-                    Login
+                    START
                 </button>
             </form>
         );
