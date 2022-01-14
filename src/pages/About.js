@@ -8,18 +8,28 @@ import { useHistory } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";
+import { AuthContext } from "../AuthContext.js";
+import Auth from "../Auth.js";
 
 // const Home = () => {
 function Home() {
+    const [auth, setAuth] = useState({ isAuth: false, token: null });
     return (
-        <div className="container">
-            <div className="bateaux">
-                <div className="row">
-                    <div className="col-4">
-                        <p id="test">Allo</p>
-                        <div id="bateauA">
-                            <ul>
-                                {/* <li>
+        <>
+            <AuthContext.Provider value={[auth, setAuth]}>
+                <div className="App">
+                    <Auth />
+                </div>
+            </AuthContext.Provider>
+
+            <div className="container">
+                <div className="bateaux">
+                    <div className="row">
+                        <div className="col-4">
+                            <p id="test">Allo</p>
+                            <div id="bateauA">
+                                <ul>
+                                    {/* <li>
                                     <img src={BateauA1} alt="Logo Modern Battleship"></img>
                                 </li>
                                 <li>
@@ -34,12 +44,13 @@ function Home() {
                                 <li>
                                     <img src={BateauA5} alt="Logo Modern Battleship"></img>
                                 </li> */}
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

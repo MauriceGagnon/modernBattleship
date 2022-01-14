@@ -15,15 +15,8 @@ import Auth from "./Auth";
 import { useState, useMemo } from "react";
 
 export default function App() {
-    const [auth, setAuth] = useState({ isAuth: false, token: null });
     return (
         <Router>
-            {/* <AuthContext.Provider value={[auth, setAuth]}>
-                <div className="App">
-                    <Auth />
-                </div>
-            </AuthContext.Provider> */}
-
             <ReactBootstrap.Navbar>
                 <ReactBootstrap.Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <ReactBootstrap.Container>
