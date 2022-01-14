@@ -21,8 +21,8 @@ function Log() {
                                 <div className="inner">
                                     <Switch>
                                         <Route exact path="/Login" component={Login} />
-                                        <Route path="/sign-in" component={Login} />
-                                        <Route path="/sign-up" component={SignUp} />
+                                        <Route path="/Login/sign-in" component={Login} />
+                                        <Route path="/Login/sign-up" component={SignUp} />
                                     </Switch>
                                 </div>
                             </div>

@@ -26,7 +26,7 @@ export default class SignUp extends Component {
                         Register
                     </button>
                     <p className="registered">
-                        Already registered <a href="/sign-in">log in</a>
+                        Already registered <a href="/Login/sign-in">log in</a>
                     </p>
                 </div>
             </form>

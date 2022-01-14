@@ -21,7 +21,7 @@ export default class Login extends Component {
                         Sign in
                     </button>
                     <p className="registered ">
-                        Your are not registered <a href="/sign-up">sign up</a>
+                        Your are not registered <a href="/Login/sign-up">sign up</a>
                     </p>
                 </div>
             </form>
