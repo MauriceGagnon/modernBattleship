@@ -74,6 +74,7 @@ code {
     .game-board {
         position: absolute;
         margin-top: -400px;
+
         .board-row {
             display: flex;
             list-style-type: none;
@@ -114,7 +115,9 @@ code {
     }
 }
 .special-card {
-    opacity: 0.7;
+    .card {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 ul#pin li {
@@ -151,9 +154,6 @@ ul#pin2 {
     text-shadow: 2px 2px #001118;
     text-align: right;
 }
-// .input {
-//     size: 500;
-// }
 
 .btnLogin {
     box-shadow: inset 0px -3px 7px 0px #29bbff;
@@ -163,9 +163,9 @@ ul#pin2 {
     float: right;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
-    font-size: 25px;
-    padding: 3px 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 20px;
+    padding: 2px 20px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #263666;
     margin-left: 15px;
@@ -179,8 +179,7 @@ ul#pin2 {
     top: 1px;
 }
 #gridBG {
-    // background-color: rgb(1, 26, 36);
-    background-color: $fond;
+    background-color: rgba(4, 48, 66, 0.6);
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;
@@ -192,8 +191,7 @@ ul#pin2 {
     height: 500px;
 }
 #gridBG2 {
-    // background-color: rgb(1, 26, 36);
-    background-color: $fond;
+    background-color: rgba(4, 48, 66, 0.6);
     border-style: solid;
     border-color: #ffffff;
     border-width: 1px;

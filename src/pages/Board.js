@@ -249,11 +249,11 @@ function Board() {
                             <p className="boardTitle2">YOUR FLEET</p>
                             <div id="gridBG2"></div>
                             <ul id="pin2">
-                                <PinRed></PinRed>
-                                <PinRed></PinRed>
-                                <PinWhite></PinWhite>
-                                <PinWhite></PinWhite>
-                                <PinWhite></PinWhite>
+                                <PinRed />
+                                <PinRed />
+                                <PinWhite />
+                                <PinWhite />
+                                <PinWhite />
                             </ul>
                             <div className="boats">
                                 <ul>
