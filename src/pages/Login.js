@@ -27,8 +27,6 @@ function Log() {
                                 </div>
                             </div>
                         </div>
-                        {/* <img className="moeGame" src={logoMoe} alt="Logo Moe Game"></img>
-                        <img className="logoReact" src={logoReact} alt="Logo React"></img> */}
                     </div>
                 </div>
             </div>

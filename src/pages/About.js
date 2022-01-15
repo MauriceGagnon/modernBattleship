@@ -5,14 +5,13 @@ import logoReact from "../images/reactLogoBlanc.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";
 import { AuthContext } from "../AuthContext.js";
 import Auth from "../Auth.js";
 
 // const Home = () => {
-function Home() {
+function About() {
     const [auth, setAuth] = useState({ isAuth: false, token: null });
     return (
         <>
@@ -54,4 +53,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default About;

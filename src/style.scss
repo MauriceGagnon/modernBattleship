@@ -17,10 +17,11 @@ body {
     background-position-x: center;
     background-size: 100%;
     height: 900px;
+    margin-top: -40px;
 }
 
 .backgroundImageHome {
-    margin-top: -25px;
+    margin-top: -65px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -240,18 +241,30 @@ ul#pin2 {
         margin-top: -100px;
     }
 }
-.bateaux {
-    .bateauA {
-        margin-top: 300px;
-    }
+.boats {
+    margin: 430px 0 0 200px;
+    max-width: 200px;
+    position: absolute;
+    // float: right;
 
     ul {
         list-style-type: none;
-        display: inline-flex;
+        // display: inline-flex;
     }
     li {
+        float: right;
+        padding-bottom: 5px;
+        display: inline-flex;
         // -ms-transform: rotate(90deg); /* IE 9 */
         // transform: rotate(90deg);
+
+        p {
+            color: white;
+            font-size: 14px;
+            padding-right: 10px;
+            margin: auto;
+            opacity: 0.6;
+        }
     }
     #test {
         color: white;
@@ -272,13 +285,13 @@ ul#pin2 {
 
     .inner {
         width: 450px;
-        margin: auto;
+        margin: auto 800px;
         background: #ffffff;
         box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
         padding: 40px 55px 45px 55px;
         border-radius: 15px;
         transition: all 0.3s;
-        background-color: #2dabf9;
+        background-color: rgba(45, 171, 249, 0.9);
     }
 
     .outer h3 {

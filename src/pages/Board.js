@@ -4,6 +4,11 @@ import logo from "../images/LogoModernBattleship.png";
 import pinWhite from "../images/pinWhite.png";
 import pinRed from "../images/pinRed.png";
 import blueprint from "../images/blueprint.png";
+import carrier from "../images/pieces/Carrier.png";
+import battleship from "../images/pieces/Battleship.png";
+import cruiser from "../images/pieces/Cruiser.png";
+import destroyer from "../images/pieces/Destoyer.png";
+import submarine from "../images/pieces/Submarine.png";
 import "bootstrap/dist/css/bootstrap.css";
 import { useDrag, useDrop } from "react-dnd";
 import { DndProvider } from "react-dnd";
@@ -250,6 +255,31 @@ function Board() {
                                 <PinWhite></PinWhite>
                                 <PinWhite></PinWhite>
                             </ul>
+                            <div className="boats">
+                                <ul>
+                                    <li>
+                                        <p>Carrier</p>
+                                        <img className="boat" src={carrier} alt="Carrier"></img>
+                                    </li>
+                                    <li>
+                                        <p>Battleship</p>
+                                        <img className="boat" src={battleship} alt="Battleship"></img>
+                                    </li>
+                                    <li>
+                                        <p>Destroyer</p>
+                                        <img className="boat" src={destroyer} alt="Destroyer"></img>
+                                    </li>
+                                    <li>
+                                        <p>Submarine</p>
+                                        <img className="boat" src={submarine} alt="Submarine"></img>
+                                    </li>
+                                    <li>
+                                        <p>Cruiser</p>
+                                        <img className="boat" src={cruiser} alt="Cruiser"></img>
+                                    </li>
+                                </ul>
+                                {/* </div> */}
+                            </div>
                             <div className="game2">
                                 <div className="game-board">
                                     <div className="board-row">
