@@ -1,13 +1,9 @@
 import React from "react";
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import backgroung from "../images/mainBackground.jpg";
 import logo from "../images/LogoModernBattleship.png";
-import logoMoe from "../images/moeGameBlanc.png";
-import logoReact from "../images/reactLogoBlanc.png";
-
-import Login from "./components/login.component.js";
-import SignUp from "./components/signup.component.js";
+import Login from "./components/Login.component.js";
+import SignUp from "./components/Signup.component.js";
 
 function Log() {
     return (

@@ -3,10 +3,11 @@ import axios from "axios";
 import { AuthContext } from "../../AuthContext";
 
 export default function Login() {
-    const [auth, setAuth] = useContext(AuthContext);
+    // const [auth, setAuth] = useContext(AuthContext);
+    const [auth, setAuth] = useState(true);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [errStyle, setErr] = useState({ backgroundColor: "blue" });
+    const [errStyle, setErr] = useState({ backgroundColor: "" });
 
     const loginClick = () => {
         axios
@@ -23,6 +24,7 @@ export default function Login() {
             .catch((err) => {
                 setErr({ backgroundColor: "red" });
                 setPassword("");
+                console.log(err);
             });
     };
 

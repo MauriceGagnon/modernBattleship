@@ -1,8 +1,5 @@
-import backgroung from "../images/mainBackground.jpg";
 import logo from "../images/LogoModernBattleship.png";
 import canon from "../images/blueprintCanon.png";
-import logoReact from "../images/reactLogoBlanc.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
